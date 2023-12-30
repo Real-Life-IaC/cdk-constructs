@@ -36,4 +36,4 @@ jobs:
         name: Create bump and changelog
         uses: ./.github/bump
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAT }}
