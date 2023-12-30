@@ -8,7 +8,7 @@ homepage = "https://github.com/andresionek91/constructs-package"
 repository = "https://github.com/andresionek91/constructs-package"
 keywords = ["cdk", "iac", "infrastructure"]
 packages = [
-    { include = "constructs", from = "src" },
+    { include = "constructs_package", from = "." },
 ]
 
 [tool.poetry.build]
