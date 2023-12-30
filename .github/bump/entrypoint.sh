@@ -33,7 +33,7 @@ echo "Running Commitizen"
 cz --no-raise 21 bump --yes --changelog
 
 REV="$(cz version --project)"
-echo "::set-output name=version::${REV}"
+echo "version=${REV}" >> $GITHUB_OUTPUT
 
 echo "Pushing to branch..."
 git push origin "HEAD:main" --force
