@@ -18,4 +18,4 @@ poetry add  git+https://github.com/andresionek91/book-package.git@<release or ta
 
 ## Usage
 
-This package implements some L2 and L3 cdk constructs that can be imported and used across different projects.
+This package implements some L2 and L3 cdk constructs that can be imported and used across different projects
