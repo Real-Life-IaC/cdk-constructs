@@ -1,3 +1,9 @@
+## 0.3.0 (2023-12-30)
+
+### Feat
+
+- add major and latest tags
+
 ## 0.2.1 (2023-12-30)
 
 ### Fix
