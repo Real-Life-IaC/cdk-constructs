@@ -4,9 +4,9 @@ Use this class for local cdk synth, manual deploy to development account, and to
 
 import aws_cdk as cdk
 
-from constructs import Construct
-
 from org_cdk.org_s3 import OrgBucket
+
+from constructs import Construct
 
 
 class LocalTestBucketStack(cdk.Stack):

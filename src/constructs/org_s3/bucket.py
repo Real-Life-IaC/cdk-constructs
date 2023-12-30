@@ -4,9 +4,9 @@ import aws_cdk as cdk
 
 from aws_cdk import aws_s3 as s3
 from aws_cdk import aws_ssm as ssm
-from constructs import Construct
 
-from org_cdk.org_s3.exceptions import InvalidBucketNameException
+from constructs import Construct
+from constructs.org_s3.exceptions import InvalidBucketNameException
 
 
 class OrgBucket(s3.Bucket):

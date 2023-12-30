@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "book-package"
+name = "constructs-package"
 version = "0.3.0"
 description = "AWS CDK construct extensions"
 authors = ["Andre Sionek <andre@sionek.com>"]
 readme = "README.md"
-homepage = "https://github.com/andresionek91/book-package"
-repository = "https://github.com/andresionek91/book-package"
+homepage = "https://github.com/andresionek91/constructs-package"
+repository = "https://github.com/andresionek91/constructs-package"
 keywords = ["cdk", "iac", "infrastructure"]
 packages = [
-    { include = "org_cdk", from = "src" },
+    { include = "constructs", from = "src" },
 ]
 
 [tool.poetry.build]
