@@ -40,6 +40,6 @@ git push origin "HEAD:main" --force
 git push --tags
 
 SHA="$(git rev-parse HEAD)"
-echo "::set-output name=new_sha::${SHA}"
+echo "new_sha=${SHA}" >> $GITHUB_OUTPUT
 
 echo "Done."
