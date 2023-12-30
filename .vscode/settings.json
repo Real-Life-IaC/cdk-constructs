@@ -1,0 +1,20 @@
+{
+    "python.languageServer": "Pylance",
+    "flake8.path": [
+        "poetry",
+        "run",
+        "pflake8"
+    ],
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportGeneralTypeIssues": "information"
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/.coverage": true,
+        "**/*.egg-info": true,
+    },
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+    },
+}

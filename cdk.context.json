@@ -1,0 +1,4 @@
+{
+  "ssm:account=123456789012:parameterName=/org-platform/stage:region=us-east-1": "development",
+  "ssm:account=123456789012:parameterName=/org-platform/access-logs/bucket/arn:region=us-east-1": "arn:aws:s3:::org-development-access-logs"
+}
