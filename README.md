@@ -7,13 +7,13 @@ A package that extends [AWS CDK](https://aws.amazon.com/cdk/) constructs and imp
 With pip:
 
 ```bash
-pip install git+https://github.com/andresionek91/book-package.git@<release or tag>
+pip install git+https://github.com/andresionek91/constructs-package.git@<release or tag>
 ```
 
 With poetry:
 
 ```bash
-poetry add  git+https://github.com/andresionek91/book-package.git@<release or tag>
+poetry add  git+https://github.com/andresionek91/constructs-package.git@<release or tag>
 ```
 
 ## Usage
