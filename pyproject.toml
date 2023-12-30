@@ -180,7 +180,7 @@ omit = ["*/tests/*", "*/__init__.py", "*/*config.py"]    # Remove test files fro
 [tool.commitizen]
 ag_format = "$major.$minor.$patch$prerelease"
 name = "conventional_commits"
-version = "0.0.0"
+version = "0.0.1"
 version_files = [
   "pyproject.toml:version",
 ]
