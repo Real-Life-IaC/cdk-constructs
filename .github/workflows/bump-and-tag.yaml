@@ -37,19 +37,3 @@ jobs:
         uses: ./.github/bump
         with:
           github_token: ${{ secrets.PAT }}
-
-      - name: Update Latest Tag
-        uses: EndBug/latest-tag@v1
-        with:
-          ref: latest
-
-      - name: Extract Major Version
-        id: extract_major_version
-        shell: bash
-        run: |
-          echo "tag=$(echo ${{ steps.get-version.outputs.tag }} | cut -d '.' -f1)" >> $GITHUB_OUTPUT
-
-      - name: Update Major Tag
-        uses: EndBug/latest-tag@v1
-        with:
-          ref: ${{ steps.extract_major_version.outputs.tag }}
