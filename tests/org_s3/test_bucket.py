@@ -1,8 +1,8 @@
 import pytest
 
 from aws_cdk.assertions import Template
-from org_cdk.org_s3 import OrgBucket
-from org_cdk.org_s3.exceptions import InvalidBucketNameException
+from constructs_package.org_s3 import OrgBucket
+from constructs_package.org_s3.exceptions import InvalidBucketNameException
 
 
 class TestOrgBucket:
