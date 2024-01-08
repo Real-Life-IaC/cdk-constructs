@@ -26,7 +26,6 @@ class OrgBucket(s3.Bucket):
         use_default_lifecycle_rules: bool = True,
         **kwargs,
     ) -> None:
-
         # The stage name / account where the bucket is deployed
         # I.e. production, staging, development
         self._stage = ssm.StringParameter.value_from_lookup(
@@ -45,14 +44,14 @@ class OrgBucket(s3.Bucket):
         )
 
         super().__init__(
-            scope,
-            id,
+            scope=scope,
+            id=id,
             encryption=s3.BucketEncryption.S3_MANAGED,
             block_public_access=s3.BlockPublicAccess.BLOCK_ALL,
             versioned=True,
             object_ownership=s3.ObjectOwnership.BUCKET_OWNER_ENFORCED,
             server_access_logs_bucket=access_logs_bucket,
-            server_access_logs_prefix=f"S3Logs/{self.bucket_name}/",
+            server_access_logs_prefix="S3Logs/",
             transfer_acceleration=kwargs.get("transfer_acceleration", False),
         )
 

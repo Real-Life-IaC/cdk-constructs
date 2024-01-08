@@ -37,7 +37,7 @@ def test_org_bucket(template):
             },
             "LoggingConfiguration": {
                 "DestinationBucketName": "org-development-access-logs",
-                "LogFilePrefix": "S3Logs/org-development-test-bucket/",
+                "LogFilePrefix": "S3Logs/",
             },
             "OwnershipControls": {"Rules": [{"ObjectOwnership": "BucketOwnerEnforced"}]},
             "PublicAccessBlockConfiguration": {
