@@ -16,7 +16,6 @@ class LocalTestBucketStack(cdk.Stack):
         bucket = OrgBucket(
             scope=self,
             id="Bucket",
-            name="test-bucket",
         )
 
         bucket.apply_removal_policy(policy=cdk.RemovalPolicy.DESTROY)

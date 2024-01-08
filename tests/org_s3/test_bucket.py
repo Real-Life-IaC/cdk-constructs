@@ -2,37 +2,6 @@ import pytest
 
 from aws_cdk.assertions import Template
 from constructs_package.org_s3 import OrgBucket
-from constructs_package.org_s3.exceptions import InvalidBucketNameException
-
-
-class TestOrgBucket:
-    @pytest.mark.parametrize(
-        "name",
-        [("foobar"), ("foo-bar"), ("foo1-bar2"), ("foo1bar2")],
-    )
-    def test_bucket_name_with_valid_name(self, name, stack):
-        bucket = OrgBucket(
-            scope=stack,
-            id="Bucket",
-            name=name,
-        )
-
-        actual = bucket.bucket_name
-        expected = f"org-development-{name}"
-
-        assert actual == expected
-
-    @pytest.mark.parametrize(
-        "name",
-        [("foo_bar"), ("foo bar"), ("foo.bar"), ("FooBar"), ("foobar-"), ("foo#bar"), ("org-development-foobar")],
-    )
-    def test_bucket_name_with_invalid_name(self, name, stack):
-        with pytest.raises(InvalidBucketNameException):
-            OrgBucket(
-                scope=stack,
-                id="Bucket",
-                name=name,
-            )
 
 
 @pytest.fixture(scope="function", name="template")
@@ -40,7 +9,6 @@ def template_fixture(stack):
     OrgBucket(
         scope=stack,
         id="Bucket",
-        name="test-bucket",
     )
     return Template.from_stack(stack)
 
@@ -57,7 +25,6 @@ def test_org_bucket(template):
             "BucketEncryption": {
                 "ServerSideEncryptionConfiguration": [{"ServerSideEncryptionByDefault": {"SSEAlgorithm": "AES256"}}]
             },
-            "BucketName": "org-development-test-bucket",
             "LifecycleConfiguration": {
                 "Rules": [
                     {
