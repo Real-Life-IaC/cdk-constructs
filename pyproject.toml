@@ -2,10 +2,10 @@
 name = "constructs-package"
 version = "0.3.1"
 description = "AWS CDK construct extensions"
-authors = ["Andre Sionek <andre@sionek.com>"]
+authors = ["Andre Sionek <andre@real-life-iac.com>"]
 readme = "README.md"
-homepage = "https://github.com/andresionek91/constructs-package"
-repository = "https://github.com/andresionek91/constructs-package"
+homepage = "https://real-life-iac.com/"
+repository = "https://github.com/Real-Life-Infrastructure-as-Code/cdk-constructs"
 keywords = ["cdk", "iac", "infrastructure"]
 packages = [
     { include = "constructs_package", from = "." },
