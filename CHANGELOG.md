@@ -1,3 +1,15 @@
+## 0.4.0 (2024-01-08)
+
+### Feat
+
+- adjust submodules
+- adjust submodules
+- refactor to remove bucket name
+
+### Fix
+
+- adjust tests
+
 ## 0.3.1 (2023-12-30)
 
 ### Fix
