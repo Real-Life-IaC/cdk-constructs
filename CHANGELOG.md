@@ -1,3 +1,9 @@
+## 0.4.0 (2024-01-08)
+
+### Feat
+
+- refactor to remove bucket name
+
 ## 0.3.1 (2023-12-30)
 
 ### Fix
