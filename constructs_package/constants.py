@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import StrEnum
 
 
-class AwsAccountId(str, Enum):
+class AwsAccountId(StrEnum):
     """AWS account IDs"""
 
     SANDBOX = "637423243766"
@@ -11,13 +11,13 @@ class AwsAccountId(str, Enum):
     MANAGEMENT = "267631547124"
 
 
-class AwsRegion(str, Enum):
+class AwsRegion(StrEnum):
     """AWS regions"""
 
     US_EAST_1 = "us-east-1"
 
 
-class AwsStage(str, Enum):
+class AwsStage(StrEnum):
     """AWS stages"""
 
     SANDBOX = "sandbox"
