@@ -1,3 +1,9 @@
+## 0.6.0 (2024-01-09)
+
+### Feat
+
+- create enums for region and stage
+
 ## 0.5.0 (2024-01-09)
 
 ### Feat
