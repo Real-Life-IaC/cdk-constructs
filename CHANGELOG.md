@@ -1,3 +1,9 @@
+## 0.7.1 (2024-01-11)
+
+### Fix
+
+- remove underscore from stage name
+
 ## 0.7.0 (2024-01-09)
 
 ### Feat
