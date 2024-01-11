@@ -23,5 +23,5 @@ class AwsStage(StrEnum):
     SANDBOX = "sandbox"
     STAGING = "staging"
     PRODUCTION = "production"
-    SHARED_SERVICES = "shared_services"
+    SHARED_SERVICES = "sharedservices"
     MANAGEMENT = "management"
