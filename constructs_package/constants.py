@@ -7,7 +7,6 @@ class AwsAccountId(StrEnum):
     SANDBOX = "637423243766"
     STAGING = "905418189086"
     PRODUCTION = "730335548799"
-    SHARED_SERVICES = "767397808306"
     MANAGEMENT = "267631547124"
 
 
@@ -23,5 +22,4 @@ class AwsStage(StrEnum):
     SANDBOX = "sandbox"
     STAGING = "staging"
     PRODUCTION = "production"
-    SHARED_SERVICES = "sharedservices"
     MANAGEMENT = "management"

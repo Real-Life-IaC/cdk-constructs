@@ -26,13 +26,6 @@ class OrgBucket(s3.Bucket):
         use_default_lifecycle_rules: bool = True,
         **kwargs,
     ) -> None:
-        # The stage name / account where the bucket is deployed
-        # I.e. production, staging, development
-        self._stage = ssm.StringParameter.value_from_lookup(
-            scope=scope,
-            parameter_name="/org-platform/stage",
-        )
-
         # Loads the access logs bucket from SSM parameter
         access_logs_bucket = s3.Bucket.from_bucket_arn(
             scope=scope,

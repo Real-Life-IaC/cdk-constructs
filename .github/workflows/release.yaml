@@ -1,0 +1,23 @@
+---
+name: Release Package
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Bump Version and Release
+        uses: ./.github/actions/release
+        with:
+          machine_user_pat: ${{ secrets.MACHINE_USER_PAT }}
