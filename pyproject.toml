@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "constructs-package"
-version = "0.7.1"
+version = "0.7.2"
 description = "AWS CDK construct extensions"
 authors = ["Andre Sionek <andre@real-life-iac.com>"]
 readme = "README.md"
@@ -178,7 +178,7 @@ omit = ["*/tests/*", "*/__init__.py", "*/*config.py"]    # Remove test files fro
 
 [tool.commitizen]
 ag_format = "$major.$minor.$patch$prerelease"
-version = "0.7.1"
+version = "0.7.2"
 version_files = [
   "pyproject.toml:version",
 ]
