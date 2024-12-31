@@ -31,7 +31,12 @@ def test_org_bucket(template):
                         "AbortIncompleteMultipartUpload": {"DaysAfterInitiation": 7},
                         "NoncurrentVersionTransitions": [{"StorageClass": "STANDARD_IA", "TransitionInDays": 60}],
                         "Status": "Enabled",
-                        "Transitions": [{"StorageClass": "INTELLIGENT_TIERING", "TransitionInDays": 60}],
+                        "Transitions": [
+                            {
+                                "StorageClass": "INTELLIGENT_TIERING",
+                                "TransitionInDays": 60,
+                            }
+                        ],
                     }
                 ]
             },
